@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Suresh Kosana — Java Backend Developer portfolio.">
+<title>Suresh Kosana | Java Backend Developer</title>
+<style>
+:root{--bg:#07111f;--bg2:#0b1728;--card:rgba(15,29,49,.72);--text:#f8fbff;--muted:#9db0c7;--line:rgba(148,163,184,.16);--blue:#42a5ff;--blue2:#1769e0;--green:#35d07f;--shadow:0 22px 70px rgba(0,0,0,.35)}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Inter,Segoe UI,Arial,sans-serif;background:radial-gradient(circle at 10% 0%,#12345a 0,transparent 32%),radial-gradient(circle at 90% 10%,#18215b 0,transparent 30%),var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}section{padding:96px 0}.topbar{position:sticky;top:0;z-index:20;background:rgba(7,17,31,.78);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}nav{height:72px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:1.45rem;font-weight:800}.logo span{color:var(--blue)}.navlinks{display:flex;gap:28px;list-style:none;color:#c7d5e6;font-size:.94rem}.navlinks a:hover{color:#fff}.menu{display:none;background:none;border:0;color:#fff;font-size:1.6rem;cursor:pointer}.hero{min-height:calc(100vh - 72px);display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:70px}.status{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(53,208,127,.25);background:rgba(53,208,127,.08);color:#8df0b8;border-radius:999px;padding:7px 13px;font-size:.84rem;font-weight:700;margin-bottom:22px}.status i{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 12px var(--green)}.eyebrow{color:var(--blue);font-size:.78rem;letter-spacing:2px;font-weight:800;margin-bottom:12px}.hero h1{font-size:clamp(3rem,7vw,5.8rem);line-height:1.02;letter-spacing:-3px;margin-bottom:18px}.hero h1 span{background:linear-gradient(90deg,#5db5ff,#a88cff);-webkit-background-clip:text;color:transparent}.hero h2{font-size:1.45rem;color:#dbe8f6;margin-bottom:18px}.lead{font-size:1.08rem;color:var(--muted);max-width:680px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:30px 0}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:10px;border:1px solid var(--line);font-weight:800;transition:.25s}.btn:hover{transform:translateY(-3px)}.primary{background:linear-gradient(135deg,var(--blue2),#5d43d7);border-color:transparent}.ghost{background:rgba(255,255,255,.03)}.location{color:#a9bad0;font-size:.92rem}.hero-photo{position:relative;display:flex;justify-content:center}.photo-wrap{width:min(390px,78vw);aspect-ratio:1;border-radius:28px;padding:7px;background:linear-gradient(145deg,#3ea8ff,#5c43db);box-shadow:var(--shadow);transform:rotate(2deg)}.photo-wrap img{width:100%;height:100%;object-fit:cover;object-position:center top;border-radius:22px;display:block;filter:saturate(.95) contrast(1.04)}.photo-badge{position:absolute;bottom:25px;left:5%;background:rgba(8,18,32,.9);border:1px solid var(--line);backdrop-filter:blur(14px);padding:13px 16px;border-radius:14px;box-shadow:var(--shadow)}.photo-badge strong{display:block}.photo-badge small{color:var(--muted)}.section-head{text-align:center;max-width:700px;margin:0 auto 48px}.section-head .eyebrow{margin-bottom:7px}.section-head h2{font-size:2.45rem;margin-bottom:8px}.section-head p{color:var(--muted)}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:28px}.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px;box-shadow:0 10px 35px rgba(0,0,0,.14)}.about p{color:var(--muted);margin-bottom:15px}.skills{display:grid;grid-template-columns:1fr 1fr;gap:13px}.skill{padding:17px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.025)}.skill h3{font-size:1rem;margin-bottom:4px}.skill p{color:var(--muted);font-size:.86rem}.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.project{position:relative;overflow:hidden}.project:before{content:"";height:3px;position:absolute;top:0;left:0;right:0;background:linear-gradient(90deg,#2d9cff,#7c5cff)}.num{color:var(--blue);font-weight:900;letter-spacing:1px;margin-bottom:20px}.project h3{font-size:1.25rem;margin-bottom:10px}.project p{color:var(--muted);font-size:.94rem;min-height:118px}.chips{display:flex;flex-wrap:wrap;gap:7px;margin:18px 0}.chip{font-size:.72rem;color:#a9d5ff;background:rgba(66,165,255,.09);border:1px solid rgba(66,165,255,.16);padding:5px 8px;border-radius:6px}.codebtn{display:inline-flex;color:#8fcaff;font-weight:800;font-size:.9rem}.timeline{display:grid;gap:16px}.edu{display:flex;justify-content:space-between;gap:25px;align-items:flex-start}.edu h3{font-size:1.1rem}.edu p,.edu span{color:var(--muted);font-size:.9rem}.year{white-space:nowrap;color:#8fcaff!important}.certs{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.cert{padding:20px;border:1px solid var(--line);border-radius:15px;background:rgba(255,255,255,.025)}
+.cert small{display:block;color:#8197ae;font-size:.74rem;line-height:1.5;margin-top:8px}
+.cert-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}
+.cert-actions a{display:inline-flex;padding:7px 9px;border:1px solid rgba(66,165,255,.2);border-radius:7px;color:#8fcaff;font-size:.76rem;font-weight:800;background:rgba(66,165,255,.05)}
+.cert-actions a:hover{border-color:#55afff;color:#fff}
+
+.cert strong{display:block;margin-bottom:4px}.cert span{color:var(--muted);font-size:.86rem}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:38px;text-align:left}
+.contact-copy{display:flex;flex-direction:column;justify-content:center}
+.contact-copy h2{font-size:2.5rem;line-height:1.1;margin-bottom:12px}
+.contact-copy p{color:var(--muted);margin-bottom:22px}
+.contact-form{display:flex;flex-direction:column;gap:8px;padding:24px;background:rgba(5,14,26,.42);border:1px solid var(--line);border-radius:16px}
+.contact-form label{font-size:.8rem;color:#c7d8ea;font-weight:800;margin-top:4px}
+.contact-form input,.contact-form textarea{width:100%;border:1px solid var(--line);background:rgba(255,255,255,.035);color:#fff;border-radius:9px;padding:11px 12px;font:inherit;outline:none;resize:vertical}
+.contact-form input:focus,.contact-form textarea:focus{border-color:#4eafff;box-shadow:0 0 0 3px rgba(66,165,255,.08)}
+.contact-form button{margin-top:8px}
+.contact-form small{color:#71869d;font-size:.72rem;line-height:1.5}
+@media(max-width:900px){.contact-grid{grid-template-columns:1fr}}
+
+.contact{max-width:100%;margin:auto;text-align:center;background:linear-gradient(145deg,rgba(32,86,145,.28),rgba(67,46,140,.18));border:1px solid var(--line);border-radius:24px;padding:48px}.contact h2{font-size:2.2rem;margin-bottom:10px}.contact p{color:var(--muted);margin-bottom:24px}.contact-links{display:flex;justify-content:center;flex-wrap:wrap;gap:10px}.contact-links a{padding:10px 14px;border:1px solid var(--line);border-radius:9px;color:#c9d9eb}.contact-links a:hover{border-color:#55afff;color:#fff}footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;color:#71849b;font-size:.88rem}
+
+.project-preview{height:155px;border:1px solid rgba(66,165,255,.16);border-radius:14px;background:linear-gradient(145deg,#0a1930,#0b213b);margin:-4px 0 20px;padding:15px;overflow:hidden;position:relative}
+.preview-title{font-size:.72rem;color:#75c3ff;font-weight:900;letter-spacing:1px;margin-bottom:12px}
+.preview-flow{display:flex;align-items:center;justify-content:center;gap:7px;font-size:.68rem;color:#d6e6f5}
+.preview-node{border:1px solid rgba(120,190,255,.22);background:rgba(255,255,255,.035);border-radius:8px;padding:8px 7px;text-align:center;min-width:66px}
+.preview-node strong{display:block;color:#fff;font-size:.68rem;margin-bottom:2px}
+.preview-node span{color:#8ca4bc;font-size:.58rem}
+.preview-arrow{color:#4eafff;font-size:.9rem}
+.preview-stack{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}
+.preview-pill{border:1px solid rgba(66,165,255,.17);background:rgba(66,165,255,.06);border-radius:7px;padding:8px 5px;text-align:center;color:#a9d5ff;font-size:.6rem;font-weight:800}
+.preview-console{font-family:Consolas,monospace;font-size:.63rem;color:#9dd4ff;line-height:1.8;background:rgba(0,0,0,.18);border-radius:8px;padding:8px}
+.preview-console b{color:#6fe0a5}
+.preview-db{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}
+.preview-db span{padding:7px 9px;border-radius:7px;background:rgba(255,255,255,.04);border:1px solid var(--line);color:#b9d5ed;font-size:.62rem}
+
+.detailbtn{display:inline-flex;align-items:center;justify-content:center;margin-right:8px;padding:7px 10px;border:1px solid rgba(66,165,255,.25);border-radius:7px;background:rgba(66,165,255,.08);color:#9fd2ff;font:inherit;font-size:.82rem;font-weight:800;cursor:pointer;transition:.2s}
+.detailbtn:hover{background:rgba(66,165,255,.16);transform:translateY(-2px)}
+.modal{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:22px;background:rgba(1,7,15,.78);backdrop-filter:blur(10px)}
+.modal.open{display:flex}
+.modal-card{width:min(720px,94vw);max-height:88vh;overflow:auto;background:linear-gradient(145deg,#0d1c31,#091526);border:1px solid rgba(91,174,255,.25);border-radius:22px;padding:30px;box-shadow:0 30px 100px rgba(0,0,0,.55);position:relative}
+.modal-close{position:absolute;right:18px;top:14px;border:1px solid var(--line);background:rgba(255,255,255,.04);color:#fff;width:36px;height:36px;border-radius:50%;font-size:1.2rem;cursor:pointer}
+.modal-card h2{font-size:1.8rem;margin:4px 42px 6px 0}
+.modal-meta{color:#83c7ff;font-size:.85rem;font-weight:800;margin-bottom:18px}
+.modal-card p{color:var(--muted);margin-bottom:18px}
+.modal-card h4{margin:20px 0 9px;color:#e8f3ff}
+.modal-list{padding-left:20px;color:#b9c9da}
+.modal-list li{margin:6px 0}
+.modal-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+@media(max-width:680px){.modal-card{padding:24px 20px}.detailbtn{margin-bottom:8px}}
+
+.reveal{opacity:0;transform:translateY(22px);transition:.7s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:900px){.hero{grid-template-columns:1fr;gap:40px;padding:55px 0}.hero-photo{order:-1}.photo-wrap{width:300px}.projects{grid-template-columns:1fr}.grid2{grid-template-columns:1fr}.certs{grid-template-columns:1fr}}
+@media(max-width:680px){section{padding:72px 0}.navlinks{display:none;position:absolute;top:72px;left:0;right:0;background:#091525;padding:20px;flex-direction:column;gap:16px;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.menu{display:block}.hero h1{font-size:3.2rem;letter-spacing:-2px}.hero h2{font-size:1.2rem}.photo-wrap{width:250px}.skills{grid-template-columns:1fr}.edu{flex-direction:column;gap:4px}.contact{padding:32px 20px}.section-head h2{font-size:2rem}}
+</style>
+</head>
+<body>
+<header class="topbar">
+<nav class="container">
+<a class="logo" href="#home">Suresh<span>.</span></a>
+<button class="menu" id="menu" aria-label="Open menu">☰</button>
+<ul class="navlinks" id="navlinks">
+<li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#education">Education</a></li><li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<section id="home">
+<div class="container hero">
+<div class="reveal">
+<div class="status"><i></i> Open to Opportunities</div>
+<div class="eyebrow">JAVA BACKEND DEVELOPER</div>
+<h1>Hi, I'm <span>Suresh Kosana</span></h1>
+<h2>Building secure, scalable &amp; reliable backend systems with Java.</h2>
+<p class="lead">MCA graduate and backend-focused Software Engineer working with Java, Spring Boot, Spring Security, REST APIs and databases. I enjoy building practical systems and solving challenging engineering problems.</p>
+<div class="actions">
+<a class="btn primary" href="#projects">View My Work →</a>
+<a class="btn ghost" href="Suresh_Kosana_Resume.pdf" download>Download Resume</a>
+<a class="btn ghost" href="#contact">Contact Me</a>
+</div>
+<div class="location">📍 Hyderabad, India</div>
+</div>
+<div class="hero-photo reveal">
+<div class="photo-wrap"><img src="profile.jpg" alt="Professional portrait of Suresh Kosana"></div>
+<div class="photo-badge"><strong>Java • Spring Boot</strong><small>Backend Engineering</small></div>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="container">
+<div class="section-head reveal"><div class="eyebrow">ABOUT ME</div><h2>Backend-focused. Curious. Always learning.</h2></div>
+<div class="grid2">
+<div class="card about reveal">
+<p>I'm Suresh Kosana, and I completed my MCA in 2025 from Adikavi Nannaya University.</p>
+<p>My core strength is Java backend development — I work primarily with Spring Boot, Spring Security, and REST APIs. Over the past year, I've built three backend projects to strengthen my practical skills.</p>
+<p>I'm especially proud of my Student Management System, where I implemented JWT-based authentication with role-based access control and wrote 77 tests achieving 97% instruction coverage using JUnit and Mockito.</p>
+<p>I also built Quiver, a distributed object-sharing system using CRDTs and vector clocks from scratch, which deepened my understanding of distributed systems and concurrency.</p>
+<p>I'm currently strengthening Data Structures and Algorithms daily and looking for a backend engineering role where I can contribute and keep growing.</p>
+</div>
+<div class="card reveal">
+<div class="eyebrow">WHAT I BRING</div>
+<h3 style="font-size:1.4rem;margin-bottom:18px">Practical backend engineering skills</h3>
+<div class="skills" id="skills">
+<div class="skill"><h3>☕ Java</h3><p>Core Java, OOP, DSA &amp; problem solving</p></div>
+<div class="skill"><h3>🚀 Spring</h3><p>Spring Boot, Security, JPA, Hibernate</p></div>
+<div class="skill"><h3>🔐 APIs</h3><p>REST, JWT, JSON, Swagger/OpenAPI</p></div>
+<div class="skill"><h3>🗄️ Databases</h3><p>MySQL, PostgreSQL, queries &amp; schema design</p></div>
+<div class="skill"><h3>🧪 Testing</h3><p>JUnit 5, Mockito &amp; JaCoCo</p></div>
+<div class="skill"><h3>⚙️ Systems</h3><p>CRDTs, vector clocks, sockets, concurrency</p></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="projects">
+<div class="container">
+<div class="section-head reveal"><div class="eyebrow">FEATURED WORK</div><h2>Projects that show how I build</h2><p>Real backend projects with security, testing, databases and distributed-systems concepts.</p></div>
+<div class="projects">
+<article class="card project reveal"><div class="num">01 / 2026</div><h3>Student Management System</h3>
+<div class="project-preview">
+<div class="preview-title">SECURE REST API</div>
+<div class="preview-flow">
+<div class="preview-node"><strong>Client</strong><span>REST</span></div><div class="preview-arrow">→</div>
+<div class="preview-node"><strong>Security</strong><span>JWT</span></div><div class="preview-arrow">→</div>
+<div class="preview-node"><strong>Service</strong><span>Spring</span></div><div class="preview-arrow">→</div>
+<div class="preview-node"><strong>MySQL</strong><span>JPA</span></div>
+</div>
+<div class="preview-stack" style="margin-top:13px"><div class="preview-pill">77 TESTS</div><div class="preview-pill">97% COVERAGE</div><div class="preview-pill">RBAC</div><div class="preview-pill">DOCKER</div></div>
+</div><p>Role-based REST API with JWT authentication, stateless sessions, DTO architecture, centralized exception handling and CRUD/search/sort/pagination endpoints. 77 tests achieved 97% instruction coverage.</p><div class="chips"><span class="chip">Java 21</span><span class="chip">Spring Boot</span><span class="chip">Spring Security</span><span class="chip">JWT</span><span class="chip">MySQL</span><span class="chip">JUnit 5</span><span class="chip">Docker</span></div><button class="detailbtn" data-project="student">View Details</button><a class="codebtn" href="https://github.com/suresh-1219/student-management-system" target="_blank" rel="noopener">View Code ↗</a></article>
+<article class="card project reveal"><div class="num">02 / 2025</div><h3>Quiver: Consistent Object Sharing System</h3>
+<div class="project-preview">
+<div class="preview-title">3-NODE DISTRIBUTED SYNC</div>
+<div class="preview-flow">
+<div class="preview-node"><strong>Node A</strong><span>CRDT State</span></div><div class="preview-arrow">↔</div>
+<div class="preview-node"><strong>Node B</strong><span>CRDT State</span></div><div class="preview-arrow">↔</div>
+<div class="preview-node"><strong>Node C</strong><span>CRDT State</span></div>
+</div>
+<div class="preview-console" style="margin-top:10px"><b>$</b> gossip sync → vector clock → merge → converge</div>
+</div><p>Three-node distributed object-sharing system using vector clocks for causality and a Last-Write-Wins CRDT for conflict-free convergence, with TCP sockets, JSON messaging and concurrent processing.</p><div class="chips"><span class="chip">Java</span><span class="chip">CRDTs</span><span class="chip">Vector Clocks</span><span class="chip">TCP Sockets</span><span class="chip">Concurrency</span><span class="chip">JUnit 5</span></div><button class="detailbtn" data-project="quiver">View Details</button><a class="codebtn" href="https://github.com/suresh-1219/quiver-consistent-object-sharing-system" target="_blank" rel="noopener">View Code ↗</a></article>
+<article class="card project reveal"><div class="num">03 / 2024</div><h3>Placement Management System</h3>
+<div class="project-preview">
+<div class="preview-title">REST + POSTGRESQL</div>
+<div class="preview-db"><span>REST API</span><span>DTO</span><span>JPA / HIBERNATE</span><span>POSTGRESQL</span></div>
+<div class="preview-console" style="margin-top:13px"><b>GET</b> /placements &nbsp; <b>POST</b> /placements<br><b>PUT</b> /placements/{id} &nbsp; <b>DELETE</b> /placements/{id}</div>
+</div><p>RESTful Placement Management API supporting CRUD operations on student placement records, with PostgreSQL, JPA/Hibernate, DTO separation, Bean Validation and centralized error responses.</p><div class="chips"><span class="chip">Spring Boot</span><span class="chip">PostgreSQL</span><span class="chip">JPA</span><span class="chip">Hibernate</span><span class="chip">Validation</span></div><button class="detailbtn" data-project="placement">View Details</button><a class="codebtn" href="https://github.com/suresh-1219/placement-management-system" target="_blank" rel="noopener">View Code ↗</a></article>
+</div>
+</div>
+</section>
+
+<section id="education">
+<div class="container">
+<div class="section-head reveal"><div class="eyebrow">EDUCATION &amp; CERTIFICATIONS</div><h2>Learning foundation</h2></div>
+<div class="grid2">
+<div class="card reveal"><div class="eyebrow">EDUCATION</div><div class="timeline">
+<div class="edu"><div><h3>Master of Computer Applications (MCA)</h3><p>Adikavi Nannaya University · S.V.K.P &amp; Dr. K.S. Raju Arts &amp; Science College</p><p>CGPA: <strong>7.32/10</strong></p></div><span class="year">2023–2025</span></div>
+<div class="edu"><div><h3>B.Sc. Computer Science</h3><p>Adikavi Nannaya University · S.V.K.P &amp; Dr. K.S. Raju Arts &amp; Science College</p><p>CGPA: <strong>7.18/10</strong></p></div><span class="year">2020–2023</span></div>
+</div></div>
+<div class="card reveal"><div class="eyebrow">CERTIFICATIONS</div><div class="certs">
+<div class="cert"><strong>Full Stack Java Development Training</strong><span>Capgemini &amp; TNS India Foundation</span><small>Git · PostgreSQL · Core Java 8 · Spring 5 · Spring Boot · HTML5 · CSS3 · JavaScript · TypeScript · React</small><div class="cert-actions"><a href="Suresh%20Kosana%20T030305224(1).pdf" target="_blank" rel="noopener">View Certificate ↗</a></div></div>
+<div class="cert"><strong>Artificial Intelligence Fundamentals</strong><span>IBM SkillsBuild · Feb 04, 2026</span><small>Verified credential available through Credly.</small><div class="cert-actions"><a href="IBMDesign20260204-32-1igdwl(1).pdf" target="_blank" rel="noopener">View Certificate ↗</a><a href="https://www.credly.com/badges/6c8c3899-fec9-4775-a8a9-72470219eff0" target="_blank" rel="noopener">Verify ↗</a></div></div>
+<div class="cert"><strong>Project Management Fundamentals</strong><span>IBM SkillsBuild · Feb 08, 2026</span><small>Verified credential available through Credly.</small><div class="cert-actions"><a href="IBMDesign20260208-31-gr9892(1).pdf" target="_blank" rel="noopener">View Certificate ↗</a><a href="https://www.credly.com/badges/e24d7f9c-65ff-4ef4-8247-495ca4f1ddd2" target="_blank" rel="noopener">Verify ↗</a></div></div>
+<div class="cert"><strong>Job Application Essentials</strong><span>IBM SkillsBuild · Feb 08, 2026</span><small>Verified credential available through Credly.</small><div class="cert-actions"><a href="IBMDesign20260208-31-zwmeyy(1).pdf" target="_blank" rel="noopener">View Certificate ↗</a><a href="https://www.credly.com/badges/06db0091-913c-45fb-aa38-313834cd286f" target="_blank" rel="noopener">Verify ↗</a></div></div>
+</div></div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<div class="contact contact-grid reveal">
+<div class="contact-copy">
+<div class="eyebrow">GET IN TOUCH</div>
+<h2>Let's build something useful.</h2>
+<p>I'm looking for backend engineering opportunities where I can contribute, learn and grow.</p>
+<div class="contact-links">
+<a href="mailto:sureshkosana333@gmail.com">✉ Email</a>
+<a href="tel:+917093457569">☎ Phone</a>
+<a href="https://www.linkedin.com/in/suresh-kosana" target="_blank" rel="noopener">LinkedIn ↗</a>
+<a href="https://github.com/suresh-1219" target="_blank" rel="noopener">GitHub ↗</a>
+</div>
+</div>
+<form class="contact-form" id="contactForm">
+<label for="visitorName">Name</label>
+<input id="visitorName" name="name" type="text" placeholder="Your name" required>
+<label for="visitorEmail">Email</label>
+<input id="visitorEmail" name="email" type="email" placeholder="you@example.com" required>
+<label for="visitorMessage">Message</label>
+<textarea id="visitorMessage" name="message" rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+<button class="btn primary" type="submit">Send Message →</button>
+<small>Submitting opens your email app with the message prepared for Suresh.</small>
+</form>
+</div>
+</div>
+</section>
+</main>
+
+
+<div class="modal" id="projectModal" aria-hidden="true">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Close project details">×</button>
+    <div class="eyebrow" id="modalEyebrow">PROJECT DETAILS</div>
+    <h2 id="modalTitle"></h2>
+    <div class="modal-meta" id="modalMeta"></div>
+    <p id="modalDescription"></p>
+    <h4>Key Highlights</h4>
+    <ul class="modal-list" id="modalHighlights"></ul>
+    <h4>Technology</h4>
+    <div class="chips" id="modalChips"></div>
+    <div class="modal-actions"><a class="btn primary" id="modalGithub" href="#" target="_blank" rel="noopener">View GitHub ↗</a></div>
+  </div>
+</div>
+
+<footer><div class="container">© <span id="year"></span> Suresh Kosana · Built with HTML, CSS &amp; JavaScript</div></footer>
+
+<script>
+const menu=document.getElementById('menu'), links=document.getElementById('navlinks');
+menu.addEventListener('click',()=>links.classList.toggle('open'));
+document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+document.getElementById('year').textContent=new Date().getFullYear();
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+const projectData={
+ student:{
+  title:"Student Management System",meta:"2026 · Java Backend Project",
+  description:"A secure REST API for managing student records with authentication, authorization and production-style backend practices.",
+  highlights:["JWT-based authentication with stateless sessions","Role-based access control for ADMIN and USER roles","CRUD, search, sorting and pagination endpoints","Centralized exception handling and DTO-based architecture","77 automated tests with 97% instruction coverage using JUnit 5 and Mockito"],
+  tech:["Java 21","Spring Boot","Spring Security","JWT","MySQL","JUnit 5","Mockito","Docker"],
+  github:"https://github.com/suresh-1219/student-management-system"
+ },
+ quiver:{
+  title:"Quiver: Consistent Object Sharing System",meta:"2025 · Distributed Systems Project",
+  description:"A three-node distributed object-sharing system designed for conflict-free synchronization and convergence across multiple nodes.",
+  highlights:["Vector clocks to track causality and detect concurrent updates","Last-Write-Wins CRDT for deterministic conflict resolution","TCP socket communication with JSON messaging","Concurrent processing with thread-safe state management","Designed to converge to a consistent state across nodes"],
+  tech:["Java","CRDTs","Vector Clocks","TCP Sockets","JSON","Concurrency","JUnit 5"],
+  github:"https://github.com/suresh-1219/quiver-consistent-object-sharing-system"
+ },
+ placement:{
+  title:"Placement Management System",meta:"2024 · REST API Project",
+  description:"A backend API for managing placement records with clean separation of concerns, validation and PostgreSQL persistence.",
+  highlights:["RESTful CRUD endpoints for placement records","PostgreSQL persistence with JPA and Hibernate","DTO separation between API and persistence models","Bean Validation for request data","Centralized error responses"],
+  tech:["Spring Boot","PostgreSQL","JPA","Hibernate","REST APIs","Validation"],
+  github:"https://github.com/suresh-1219/placement-management-system"
+ }
+};
+const modal=document.getElementById('projectModal');
+const modalTitle=document.getElementById('modalTitle');
+const modalMeta=document.getElementById('modalMeta');
+const modalDescription=document.getElementById('modalDescription');
+const modalHighlights=document.getElementById('modalHighlights');
+const modalChips=document.getElementById('modalChips');
+const modalGithub=document.getElementById('modalGithub');
+function openProject(key){
+ const p=projectData[key]; if(!p)return;
+ modalTitle.textContent=p.title; modalMeta.textContent=p.meta; modalDescription.textContent=p.description;
+ modalHighlights.innerHTML=p.highlights.map(x=>`<li>${x}</li>`).join('');
+ modalChips.innerHTML=p.tech.map(x=>`<span class="chip">${x}</span>`).join('');
+ modalGithub.href=p.github; modal.classList.add('open'); modal.setAttribute('aria-hidden','false');
+}
+document.querySelectorAll('.detailbtn').forEach(b=>b.addEventListener('click',()=>openProject(b.dataset.project)));
+document.getElementById('modalClose').addEventListener('click',()=>{modal.classList.remove('open');modal.setAttribute('aria-hidden','true')});
+modal.addEventListener('click',e=>{if(e.target===modal){modal.classList.remove('open');modal.setAttribute('aria-hidden','true')}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){modal.classList.remove('open');modal.setAttribute('aria-hidden','true')}});
+
+
+document.getElementById('contactForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const name=document.getElementById('visitorName').value.trim();
+ const email=document.getElementById('visitorEmail').value.trim();
+ const message=document.getElementById('visitorMessage').value.trim();
+ const subject=encodeURIComponent('Portfolio Contact — '+name);
+ const body=encodeURIComponent('Name: '+name+'\nEmail: '+email+'\n\nMessage:\n'+message);
+ window.location.href='mailto:sureshkosana333@gmail.com?subject='+subject+'&body='+body;
+});
+
+</script>
+</body>
+</html>
